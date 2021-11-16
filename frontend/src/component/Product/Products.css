@@ -1,0 +1,117 @@
+.productsHeading{
+    text-align: center;
+    width: 15vw;
+    color:rgba(0,0,0,0.415);
+    font:600 2vmax "Roboto";
+    margin: 2vmax auto;
+    border-bottom: 1px solid rgba(0,0,0,0.312);
+    padding:1vmax;
+
+
+}
+
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5vmax;
+    min-height: 30vh;
+    margin: 2vmax auto;
+    width: 80vw;
+    min-height: 30vw;
+}
+
+
+.paginationBox{
+    display: flex;
+    justify-content: center;
+    margin: 6vmax ;
+
+}
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.page-item{
+    list-style: none;
+    background-color: rgb(255,255,255);
+    border:1px solid  rgba(0,0,0,0.178);
+    padding:1vmax 1.5vmax;
+    transition: all 0.5s;
+}
+
+.page-item:first-child{
+    border-radius: 5px 0 0 5px;
+}
+
+.page-item:last-child{
+    border-radius: 0 5px 5px 0;
+}
+
+.page-link{
+    text-decoration: none;
+    color:rgb(70, 67, 67);
+    font:300 1.6vmax "Roboto";
+    transition: all 0.5s;
+}
+
+.page-item:hover{
+    background-color: rgb(230,230,230);
+
+}
+.page-item:hover .page-link{
+    color:rgb(80,80,80);
+
+}
+
+.pageItemActive{
+    background-color: tomato;
+ 
+}
+
+.pageLinkActive{
+    color:white;
+}
+
+.filterBox{
+    width:10vw;
+    position: absolute;
+    top:10vmax;
+    left:2.5vmax;
+
+}
+
+.categoryBox{
+    padding: 0%;
+}
+
+.category-link{
+    list-style: none;
+    color:rgba(0,0,0,0.65);
+    text-transform:capitalize;
+    margin:0.5vmax;
+    transition: all 0.5s;
+    cursor:pointer;
+    font:400 1.4max "Roboto";
+}
+
+.category-link:hover{
+    color:tomato;
+}
+
+.filterBox > fieldset {
+    border: 1px solid rgba(0, 0, 0, 0.329);
+  }
+
+@media screen and (max-width:600px) {
+    .filterBox{
+        width:20vmax;
+        position: static;
+        margin: auto;
+    }
+    
+}
